@@ -38,5 +38,35 @@
     </section>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script>
+   var h2 = document.querySelector('h2')
+
+var arr = [ 
+    'Login',
+  'Hey',
+'Welcome',
+`It's nice having you here`,
+'Have a nice day' 
+]
+function handleClicks(){
+  switch(h2.innerText){
+    case arr[0]:
+h2.innerText = arr[1];
+break;
+    case arr[1]:
+h2.innerText = arr[2];
+break;
+    case arr[2]:
+h2.innerText = arr[3];
+break;
+case arr[3]:
+h2.innerText = arr[4];
+break;
+    default:
+h2.innerText = arr[0]
+  }
+}
+h2.addEventListener('click', handleClicks);
+</script>
 </body>
 </html>
